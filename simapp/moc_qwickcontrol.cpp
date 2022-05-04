@@ -93,3 +93,4 @@ int QWickControl::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE
+Additional data
