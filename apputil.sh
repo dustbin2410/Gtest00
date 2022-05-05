@@ -12,7 +12,7 @@ else
 	exit 0
 fi
 
-fabs=./$dirname/$fkey.txt
+fabs=./util/$dirname/$fkey.txt
 
 if [ ! -d "$dirname" ]; then
     mkdir $dirname
