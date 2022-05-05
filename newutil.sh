@@ -10,10 +10,11 @@ else
 	exit 0
 fi
 
-fabs=./util/$dirname/$fkey.txt
+fdir=./util/$dirname
+fabs=$fdir/$fkey.txt
 
-if [ ! -d "$dirname" ]; then
-    mkdir $dirname
+if [ ! -d "$fdir" ]; then
+    mkdir $fdir
 fi
 
 echo "["$(date)"]" "Create file, key =" $fkey > $fabs
