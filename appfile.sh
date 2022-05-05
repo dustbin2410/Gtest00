@@ -1,13 +1,16 @@
-
-if [ $# != 3 ]; then
+if [ $# -eq 2 ]; then
+	akey=$1
+	fkey=def
+	dirname=$2
+elif [ $# -eq 3 ]; then
+	akey=$1
+	fkey=$2
+	dirname=$3
+else
 	echo "ERROR: Invalid params"
 	echo "Usage: $0 append_key file_key dirname";
-	exit
+	exit 0
 fi
-
-akey=$1
-fkey=$2
-dirname=$3
 
 fabs=./$dirname/$fkey.txt
 
