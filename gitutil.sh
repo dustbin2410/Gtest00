@@ -23,4 +23,4 @@ cat $fabs
 
 git status
 git add $fabs
-git commit -m "Add util file" $fabs
+git commit -m "Add util file $fabs"
