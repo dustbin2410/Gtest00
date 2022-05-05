@@ -20,3 +20,7 @@ fi
 echo "["$(date)"]" "Create file, key =" $fkey > $fabs
 
 cat $fabs
+
+git status
+git add $fabs
+git commit -m "Add util file $fabs"
